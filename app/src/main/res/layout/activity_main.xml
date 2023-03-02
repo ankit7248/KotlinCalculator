@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/almostBlack"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="right"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="0"
+
+        android:textAlignment="textEnd"
+        android:textSize="40pt" />
+
+
+    <LinearLayout style="@style/buttonRow">
+
+        <Button
+            style="@style/buttonNumber"
+            android:background="@color/almostBlack"
+            android:onClick="allClearAction"
+            android:text="@string/ac"
+            android:textColor="@color/red"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck">
+
+        </Button>
+
+        <Button
+            style="@style/buttonNumber"
+            android:background="@color/almostBlack"
+            android:onClick="backSpaceAction"
+            android:text="@string/Back"
+            android:textColor="@color/red"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck">
+
+        </Button>
+
+        <Button
+            style="@style/buttonNumber"
+            android:background="@color/almostBlack"
+            android:contentDescription="@string/hide_bottom_view_on_scroll_behavior"
+            android:onClick="numberAction"
+            android:text="">
+
+        </Button>
+
+        <Button
+            android:id="@+id/Divide"
+            style="@style/buttonOperator"
+            android:onClick="operationAction"
+            android:text="@string/divide"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+
+        style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/bu7"
+            style="@style/buttonNumber"
+            android:background="@color/almostBlack"
+            android:onClick="numberAction"
+            android:text="@string/Seven"></Button>
+
+        <Button
+            android:id="@+id/bu8"
+            style="@style/buttonNumber"
+            android:background="@color/almostBlack"
+            android:onClick="numberAction"
+            android:text="@string/Eight"></Button>
+
+        <Button
+            android:id="@+id/bu9"
+            style="@style/buttonNumber"
+            android:background="@color/almostBlack"
+            android:onClick="numberAction"
+            android:text="@string/Nine">
+
+        </Button>
+
+        <Button
+            android:id="@+id/Multiply"
+            style="@style/buttonOperator"
+            android:onClick="operationAction"
+            android:text="@string/x"></Button>
+    </LinearLayout>
+
+    <LinearLayout style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/bu4"
+            style="@style/buttonNumber"
+            android:background="@color/almostBlack"
+            android:onClick="numberAction"
+            android:text="@string/Four"></Button>
+
+        <Button
+            android:id="@+id/bu5"
+            style="@style/buttonNumber"
+            android:background="@color/almostBlack"
+            android:onClick="numberAction"
+            android:text="@string/Five"></Button>
+
+        <Button
+            android:id="@+id/bu6"
+            style="@style/buttonNumber"
+            android:background="@color/almostBlack"
+            android:onClick="numberAction"
+            android:text="@string/Six"></Button>
+
+        <Button
+            android:id="@+id/Minus"
+            style="@style/buttonOperator"
+            android:onClick="operationAction"
+            android:text="@string/minus"></Button>
+    </LinearLayout>
+
+    <LinearLayout style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/bu1"
+            style="@style/buttonNumber"
+            android:background="@color/almostBlack"
+            android:onClick="numberAction"
+            android:text="@string/One"></Button>
+
+        <Button
+            android:id="@+id/bu2"
+            style="@style/buttonNumber"
+            android:background="@color/almostBlack"
+            android:onClick="numberAction"
+            android:text="@string/Two"></Button>
+
+        <Button
+            android:id="@+id/bu3"
+            style="@style/buttonNumber"
+            android:background="@color/almostBlack"
+            android:onClick="numberAction"
+            android:text="@string/Three"></Button>
+
+        <Button
+            android:id="@+id/Sum"
+            style="@style/buttonOperator"
+            android:onClick="operationAction"
+            android:text="@string/plus"></Button>
+    </LinearLayout>
+
+    <LinearLayout style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/buDot"
+            style="@style/buttonNumber"
+            android:background="@color/almostBlack"
+            android:onClick="numberAction"
+            android:text="@string/Dots">
+
+        </Button>
+
+        <Button
+            android:id="@+id/bu0"
+            style="@style/buttonNumber"
+            android:background="@color/almostBlack"
+            android:onClick="numberAction"
+            android:text="@string/Zeros"></Button>
+
+        <Button
+            android:id="@+id/Equal"
+            style="@style/buttonNumber"
+            android:layout_weight="2"
+            android:background="@color/orange"
+            android:onClick="equalsAction"
+            android:text="@string/equal"
+            android:textColor="#455A64"
+            android:textSize="40sp"
+            android:textStyle="bold">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
